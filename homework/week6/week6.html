@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>ZSY's homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="my homepage">
+    <meta name="keywords" content="homepage">
+    <meta name="author" content="ZhengShuYu">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <!-- CSS | STYLE -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+    <style type="text/css">
+    .section {
+        font-size: 18px;
+        /*text-align: left;*/
+        color: darkslategray;
+    }
+    .Header {
+        position: fixed; 
+        top: 0px; 
+        width: 100%; 
+        height: 6%; 
+        background-color: rgba(59, 60, 79, 1);
+        float: left;
+        font-size: 20px;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="Header">
+        <div style="height: 100%; width: 100%; margin-left: 20px, ">
+            <a href="week4.html">
+                <img src="../../img/yunwen1.png" alt="Back" width="88" height="31"/>
+            </a>
+        </div>
+    </div> -->
+    <div class="container" id="Container">
+        <!-- <div class="header">
+            <img src="../../img/header2.jpg" alt="header"/>
+        </div> -->
+        <br/>
+        <div class="week4">
+            <h4><a href="../../index.html">&nbsp;&nbsp;&nbsp;&nbsp;BACK</a></h4>
+            <h2 style="text-align:center; color: darkslategray;">WEEK6</h2>
+            <div class="mycard section" id="hw0">
+                <h3>Homework 0</h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li>What are JavaScript browser sniffers?
+                            <pre>  JavaScript Browser Sniffer is a browser identifier written in JavaScript (EcmaScript) and released under the LGPL license. It will tell which browser, version and operating system you (the visitor) are using (it's like phpsniff, but in JavaScript). Browser sniffing is the act of detecting the web browser a visitor is using in order to serve version-specific pages, scripts, images, or other content. </pre>
+                        </li>
+                        <li>Why are they so commonly used in javascripts?
+                            <pre>  JavaScript browser sniffing is a way for developers to test for various browsers and as a result use a different API or feature set.The technique was commonly used around 10 years ago because Microsoft and Netscape introduced their own technologies and web standards were in their infancy. It was fairly common to write two or more client-side scripts to implement identical functionality in different browsers. Nowadays, the JavaScript browser sniffers are not so popular as before.</pre>
+                        </li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw1">
+                <h3><a href="hiThere.html">Homework 1: hiThere.html</a></h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <p>Write a few lines of well-formatted html using JavaScript - your home town &amp; country, your favourite TV show, and your favourite food!</p>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw2">
+                <h3><a href="function.html">Homework 2: function.html</a></h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li>Output double whatever value is returned from function myAlert2</li>
+                        <li>Write another function which takes 2 strings and returns them with  != between them (e.g. this != that), then output this new string.</li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw3">
+                <h3><a href="popups.html">Homework 3: popups.html</a></h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li>Get a URL from the user using a popup then redirect page using location</li>
+                        <li>Putting the mouse over the the Lime link displays a message in the status bar (bottom of window) - this is broken for the Lemon - how is it broken? Fix it!<pre>A: The function to display status must have a return value of true, which is missing in the section 'Lemon'. Therefore, adding "return true;" to the onMouseOver function will fix the bug.</pre></li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw4">
+                <h3><a href="objects.html">Homework 4: objects.html</a></h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li>Declare a global variable to hold a list (array) of holidays.</li>
+                        <li>Edit makeholiday so that it adds new holidays to the array. </li>
+                        <li>Make more holidays using makeHoliday.</li>
+                        <li>Write and call a function to loop over and display all the holidays in the array.</li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw5">
+                <h3><a href="wizardForm.html">Homework 5: wizardForm.html</a></h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li>Use a regular expression to check age is numbers only (HINT: look for non-numbers) and is sensible value (5 &lt; age &lt; 150 )</li>
+                        <li>Write a CGI/PHP program to process the form  and submit if all is OK .
+                            <ul>
+                                <li>You could use dump.pl (as given in the course FAQ) to printout the form values.</li>
+                                <li>Note that checkSubmit() is blocking the form from submitting - what should you change to allow this? 
+                                <pre>The form will be submitted if the onSubmit method has a return value of true, which is given by the function checkSubmit() in this homework. So changing the return value of checkSubmit() to true will allow the action.</pre></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw6">
+                <h3><a href="bonus.html">Bonus: more functions</a></h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li>Scroll the background and then stop it. (Click the first and the third button.)</li>
+                        <li>Change the background color of a div slowly and softly. (Click the second and the forth button.)</li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+        </div>
+        <div class="footer">
+            <p>Pass the W3C Markup Validator<br/>
+            Created by Zheng Shuyu 2016 @ Peking University</p>
+        </div>
+    </div>
+
+    <!-- PLUGIN SCRIPTS -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <!-- END PLUGIN SCRIPTS -->
+
+</body>
+
+</html>

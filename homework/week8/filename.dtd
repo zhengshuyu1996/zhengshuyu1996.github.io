@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT catalog (book+)>
+
+  <!ELEMENT book (isbn, title, author_surname, author_forenames, publisher, location, year)>
+
+    <!ELEMENT title (#PCDATA)>
+
+    <!ELEMENT author_forenames (#PCDATA)>
+
+    <!ELEMENT author_surname (#PCDATA)>
+
+    <!ELEMENT publisher (#PCDATA)>
+
+    <!ELEMENT location (city, country)>
+
+      <!ELEMENT city (#PCDATA)>
+
+      <!ELEMENT country (#PCDATA)>
+
+    <!ELEMENT isbn (#PCDATA)>
+
+    <!ELEMENT year (#PCDATA)>

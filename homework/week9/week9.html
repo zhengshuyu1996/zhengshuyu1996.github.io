@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>WEEK9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="my homepage">
+    <meta name="keywords" content="homepage">
+    <meta name="author" content="ZhengShuYu">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <!-- CSS | STYLE -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+    <style type="text/css">
+    .section {
+        font-size: 18px;
+        /*text-align: left;*/
+        color: darkslategray;
+    }
+    .Header {
+        position: fixed; 
+        top: 0px; 
+        width: 100%; 
+        height: 6%; 
+        background-color: rgba(59, 60, 79, 1);
+        float: left;
+        font-size: 20px;
+    }
+    .box {
+        width:90%; 
+        margin-left:auto; 
+        margin-right:auto; 
+        text-align: left;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container" id="Container">
+        <br/>
+        <div class="week4">
+            <h4><a href="../../index.html">&nbsp;&nbsp;&nbsp;&nbsp;BACK</a></h4>
+            <h2 style="text-align:center; color: darkslategray;">WEEK8</h2>
+            <div class="mycard section" id="hw1">
+                <h3>Homework 1</h3>
+                <div class="box">
+                    <p>Use Model-View-Controller to finish the survey of week 3.<br/>
+                    <a href="http://162.105.146.180:9026">>> Here is my work on port 9026</a><br/></p>
+                    <p style="font-family: Klee; font-style: italic; font-weight: bold;">I used Node.js framework to build my server on port 9026. My MVC frame is structured as follows: <br/>
+                    1) server: Create a server in the Node.js framework listening to port 9026. Every time the server receives a request, it will send the path name to the router to handle. Then it will continue waiting for another request.<br/>
+                    2) router: The router receives a url and check if it is legal. Then the router will call the handler function to handle a certain url/pathname. If the handler haven't been set, that is to say the url is not legal, a response of 404 will be sent back to the client.<br/>
+                    3) request handlers: Functions to handle the requests are defined in this part. A json file is used to save user infomation collectd from the client. And the same json will be returned when the client asks to list the results. <br/><br/>
+                    The client runs a javascript named main.js which sends requests and handles responses using ajax. </p>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw2">
+                <h3>Homework 2</h3>
+                <div class = "box">
+                    <p>Use apache server as reverse proxy.<br/>
+                    <a href="http://162.105.146.180:8526">>> Here is my work on port 8526</a><br/></p>
+                    <p style="font-family: Klee; font-style: italic; font-weight: bold;">I set 8526 as my apache proxy server and 9026 as my application server. You can see the questionare on both sites.</p>
+                </div>
+                <br/>
+            </div>
+            <br/>
+        </div>
+        <div class="footer">
+            <p>Pass the W3C Markup Validator<br/>
+            Created by Zheng Shuyu 2016 @ Peking University</p>
+        </div>
+    </div>
+
+    <!-- PLUGIN SCRIPTS -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <!-- END PLUGIN SCRIPTS -->
+
+</body>
+
+</html>

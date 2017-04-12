@@ -1,0 +1,16 @@
+{
+  "info": [
+    {
+      "inputName": "Lily",
+      "inputAge": "29",
+      "inputGender": "female",
+      "inputEmail": "lily@email.com"
+    },
+    {
+      "inputName": "you",
+      "inputAge": "1234",
+      "inputGender": "male",
+      "inputEmail": "34456"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+
+.header {
+	width: 100%;
+	font-size: 48px;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FEFBF1;
+	background-color: rgba(230, 241, 235, 0.6);
+	z-index: 10;
+}
+
+.container-hw {
+	overflow: hidden;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu_index {
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	font-size: 18px;
+	text-align: center;
+}
+
+.menu {
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	font-size: 16px;
+	text-align: center;
+}
+
+.menu-head {
+	color: darkslategray;
+}
+
+.item_body {
+	width: 70%;
+	float: right;
+	overflow: auto;
+}
+
+.item_middle {
+	width: 66%;
+	margin-left: auto;
+	float: left;
+	overflow: auto;
+}
+
+.item_right {
+	width: 34%;
+	/*position: fixed;*/
+	/*margin-left: 400px;*/
+	height: 100%;
+	float: right;
+	overflow: auto;
+	text-align: center;
+	font-size: 16px;
+	color: darkslategray;
+}
+
+.scroll_block {
+	width: 80%;
+	float: right;
+	overflow: auto;
+}
+
+.footer {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: darkslategray;
+}
+
+.mycard {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96%;
+	overflow: auto;
+	background-color: rgba(256, 256, 256, 0.8);
+	/*background-color: rgba(230, 241, 235, 0.8);*/
+	border: 1px solid #dddddd;
+	/*border: 1px solid darkslategray;*/
+	-webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+    box-shadow:1px 1px 2px #aaaaaa;
+    text-align: center;
+    color: darkslategray;
+}
+
+.mycard-hw {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96%;
+	overflow: auto;
+	background-color: rgba(256, 256, 256, 0.75);
+	border: 1px solid #dddddd;
+	-webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+    box-shadow:1px 1px 2px #aaaaaa;
+    color: darkslategray;
+}
+
+#section1 {
+	font-size: 18px;
+	text-align: center;
+	color: darkslategray;
+}
+
+.picture {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	/*border: 3px solid #dddddd;*/
+	border: 3px solid #ffffff;
+	-webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+    box-shadow:1px 1px 2px #aaaaaa;
+}
+
+.interest {
+	width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+}
+
+.interest p {
+	margin-left: 5%;
+}
+
+.img-small {
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+	float: left;
+}
+
+hr {
+	color: rgba(230, 241, 235, 1);
+	width: 80%;
+}
+
+audio {
+	width: 94%;
+}
+
+.left-column {
+	width: 20%;
+	height: 88%;
+	position: fixed;
+	top: 6%;
+	left: 0px;
+	float: right;
+/*	margin-bottom: 5%;
+	margin-top: 15%;*/
+	overflow: auto;
+	background-image: url('../img/IMG30.jpeg');
+	background-size: cover;
+/*	background-color: rgba(230, 241, 235, 0.6);*/
+}
+
+.right-column {
+	width: 20%;
+	height: 88%;
+	position: fixed;
+	float: right;
+	top: 6%;
+	right: 0px;
+/*	margin-bottom: 5%;
+	margin-top: 15%;*/
+	overflow: auto;
+	background-image: url('../img/IMG31.jpeg');
+	background-size: cover;
+	/*background-color: rgba(230, 241, 235, 0.6);*/
+}
+
+.mid-column {
+	width: 60%;
+	/*height: 100%;*/
+	top: 6%;
+	bottom: 6%;
+	float: left;
+	position: fixed;
+	left: 20%;
+	overflow: auto;
+	text-align: center;
+	/*background-color: black;*/
+}
+
+.week4 {
+	width: 90%;
+	/*float: right;*/
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}

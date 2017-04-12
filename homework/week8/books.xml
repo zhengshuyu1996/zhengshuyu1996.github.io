@@ -1,0 +1,32 @@
+<?xml version = "1.0"?>
+<!-- <?xml-stylesheet type="text/css" href="books.css" ?> -->
+<!DOCTYPE rootname SYSTEM "filename.dtd">
+<?xml-stylesheet type="text/xsl" href="books.xsl" ?>
+
+<catalog>
+
+  <book>
+
+    <isbn> 0-321-14945-9 </isbn>
+
+    <title> Programming the World Wide Web </title>
+
+    <author_surname> Sebesta </author_surname>
+
+    <author_forenames> Robert W </author_forenames>
+
+    <publisher> Addison Wesley </publisher>
+
+    <location>
+
+      <city> London </city>
+
+      <country> United Kingdom </country>
+
+    </location>
+
+    <year> 2003 </year>
+
+  </book>
+
+</catalog>

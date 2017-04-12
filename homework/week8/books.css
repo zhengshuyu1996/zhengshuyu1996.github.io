@@ -1,0 +1,17 @@
+<!-- books.css -->
+
+book { display: block; margin-top: 15px; color: blue;}
+
+isbn { color:red; font-size: 18pt;}
+
+title { color:green; font-size: 22pt; font-style: italic;}
+
+author_forenames, author_surname { display: block; margin-left; font-size: 16pt; font-weight: bold}
+
+publisher { font-size: 14pt;}
+
+location { display: block; margin-left: 15px; font-size: 14pt; color:black;}
+
+city, country { font-size: 12pt; }
+
+year { color:red; font-weight: bold; }

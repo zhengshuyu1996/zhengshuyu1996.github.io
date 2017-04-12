@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>ZSY's homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="my homepage">
+    <meta name="keywords" content="homepage">
+    <meta name="author" content="ZhengShuYu">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- CSS | STYLE -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+
+</head>
+
+<body>
+    <h1 align="center">Homework1</h1>
+    <div class="mycard-hw">
+        <div class="container-hw">
+            <br/>
+            <p><strong>Q1: For the three categories of web software technology we've just defined, you are asked to find out which category so-called "Netscape plug-in" technology belongs to. Please describe the basic idea of the technology, and give your reasoning on its position in the technology categories.</strong></p>
+            <hr/>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;I think the so-called "Netscape plug-in" technology belongs to  the distributed object technologies.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Netscape plug-in is a kind of browser extension that run on Netscape Plugin Application Programming Interface (NPAPI). It was first developed for Netscape browsers, starting in 1995 with Netscape Navigator 2.0, but was subsequently adopted by other browsers. It helps the browser to explain contents that the browser can’t handle natively.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;According to WIKI, “Netscape plug-in declares content types it can handle in NPAPI architecture. When the browser encounters a content type it cannot handle natively, it loads the appropriate plugin, sets aside space within the browser context for the plugin to render and then streams data to it. The plugin is responsible for rendering the data. The plugin runs in-place within the page, as opposed to older browsers that had to launch an external application to handle unknown content types.”<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;My reason on its position is that Netscape plug-in sits at browser side but it’s responsible for handling data from the server, which fits the definition of "distributed object technology”. The plug-in is developed to interplay with the content or object on different addresses. It’s similar with ActiveX mentioned in the course.<br/></p>
+        </div>
+    </div>
+    <br/>
+    <div class="mycard-hw">
+        <div class="container-hw">
+            <br/>
+            <p><strong>Q2: In a normal intercommunication between Web browser and Web Server, Web Server closes the network communication right after it sends back the document requested by the browser. Think about this statusless character of World Wide Web. Give some good points and bad points of it. Can a web server know exactly how many browsers are reading its document?</strong></p>
+            <hr/>
+            <p>Good points: <br/>
+                1. It’s a efficient way to make full use of the limited resources of the Web Server. The act of closing the network communication frees the occupied ports, so that the Server can make more connections.<br/>
+                2. It simplify the server design because there is no need to dynamically allocate storage to deal with conversations in progress.<br/><br/>
+                Bad points:<br/>
+                1. Sometimes it can be inefficient when the Client asks for resources continuously. The Client will have to reconnect the Server every time it needs resources, which may take a lot of time.<br/>
+                2. It may be necessary to include additional information in every request, and this extra information will need to be interpreted by the server.<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;For the last question, I think the server can’t know exactly how many browsers are reading its document when the connections haven’t reached the limit. When the connections reach the limit of the server, apparently, the number of browsers which are reading its document is the max number of links it can hold.<br/>
+            </p>
+        </div>
+    </div>
+    <br/>
+    <div class="mycard-hw">
+        <div class="container-hw">
+            <br/>
+            <p><strong>Q3(optional):Use some Web search engine to search keywords regarding your interest (even your own name to find out how famous you are in this Web World). Recommended search engines are http://www.baidu.com/ and http://www.google.com/</strong></p>
+            <hr/>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;I searched my Chinese name and “Peking University” and in Baidu I found a news of myself entering Peking University after The National College Entrance Examination. I found similar webpages in Google.<br/></p>
+            <img src="../img/search1.png" alt="Search result1" width="400px"/>
+            <img src="../img/search2.png" alt="Search result2" width="400px"/>
+        </div>
+    </div>
+    <br/>
+    <div class="footer">
+        <p>Pass the W3C Markup Validator<br/>
+        Created by Zheng Shuyu 2016 @ Peking University</p>
+    </div>
+</body>
+
+</html>

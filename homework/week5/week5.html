@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>ZSY's homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="my homepage">
+    <meta name="keywords" content="homepage">
+    <meta name="author" content="ZhengShuYu">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <!-- CSS | STYLE -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+    <style type="text/css">
+    .section {
+        font-size: 18px;
+        /*text-align: left;*/
+        color: darkslategray;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" id="Container">
+        <div class="header">
+            <img src="../../img/header2.jpg" alt="header"/>
+        </div>
+        <br/>
+        <div class="week4">
+            <div class="mycard section" id="hw1">
+                <h2>WEEK5</h2>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <ul>
+                        <li><strong>Edit the Sample.java program so that the label (jLabel1) shows your group number.</strong>
+                            <div style="border: 1px darkgrey;">
+                            <p>I editted <code>jLabel1.setText("Group 26");</code> in Sample.java to show my group number 26 on the label.</p></li><br/>
+                        <li><strong>Edit the RunSample.java program so that it runs with your group identity.</strong>
+                            <p>I editted <code>new internetics.Sample("y2016g26").setVisible(true);</code> in RunSample.java to show my group identity. The original code was <code>new internetics.Sample("y2016g26").show();</code>, which caused a warning in java1.8.0. So I made a small change to silence the warning.</p></li><br/>
+                        <li><strong>Run the program and take a snapshot of the window it produces so that your group number can be clearly seen</strong><br/>
+                            <strong>Snapshot: </strong><img src='groupnumber.png' alt='snapshot' /></li><br/>
+                        <li><strong>Take a snapshot of the command window showing a prompt with your name.</strong>
+                            <strong>Snapshot: </strong><img src='commandline.png' alt='snapshot' /></li><br/>
+                        <li><strong>Put the two images on your web site as homework for week 5.</strong></li><br/>
+                        <li><strong>You need to replace the BufferedReader with a Scanner and link your code on your web page.</strong><br/>
+                            <a href="RunSample.java">RunSample.java</a><br/>
+                            <a href="internetics/Sample.java">Sample.java</a>(the BufferedReader replaced by a Scanner)</li>
+                    </ul>
+                </div>
+                <br/>
+            </div>
+            <br/>
+        </div>
+        <div class="footer">
+            <p>Pass the W3C Markup Validator<br/>
+            Created by Zheng Shuyu 2016 @ Peking University</p>
+        </div>
+    </div>
+
+    <!-- PLUGIN SCRIPTS -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <!-- END PLUGIN SCRIPTS -->
+
+</body>
+
+</html>

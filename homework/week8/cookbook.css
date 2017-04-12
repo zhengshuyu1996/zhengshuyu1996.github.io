@@ -1,0 +1,29 @@
+<!-- cookbook.css -->
+cookbook {
+	background-color: AliceBlue;
+	font-family: Klee; 
+	text-align: center;
+	overflow: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+recipe {
+	margin:auto; 
+	width: 45%;
+}
+h1 { 
+	font-style: italic; 
+	color: plum;
+} 
+td.prep { 
+	font-style: italic; 
+	bgcolor: orange; 
+	colspan: 2;
+	text-align: left;
+}
+td.cooking {
+	text-align: left;
+}
+td {
+	text-align: center;
+}

@@ -1,0 +1,81 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type="text/xsl" href="cookbook.xsl" ?>
+<cookbook>
+	<recipe>
+		<name>Sweet and Sour Pork</name>
+		<ingredient>
+			<name>Pork Belly</name>
+			<amount>1</amount>
+			<unit>kg</unit>
+		</ingredient>
+		<ingredient>
+			<name>Salt</name>
+			<amount>1</amount>
+			<unit>tsp</unit>
+		</ingredient>
+		<ingredient>
+			<name>Brandy</name>
+			<amount>1 1/2</amount>
+			<unit>tsp</unit>
+		</ingredient>
+		<ingredient>
+			<name>Egg</name>
+			<amount>1</amount>
+			<unit/>
+		</ingredient>
+		<ingredient>
+			<name>Cornflour</name>
+			<amount>1</amount>
+			<unit>tbsp</unit>
+		</ingredient>
+		<ingredient>
+			<name>Vegetable oil</name>
+			<amount>600</amount>
+			<unit>ml</unit>
+		</ingredient>
+		<ingredient>
+			<name>Onion</name>
+			<amount>1</amount>
+			<unit></unit>
+		</ingredient>
+		<ingredient>
+			<name>Canned bamboo shoot</name>
+			<amount>100</amount>
+			<unit>g</unit>
+		</ingredient>
+		<ingredient>
+			<name>Green peppe</name>
+			<amount>1</amount>
+			<unit></unit>
+		</ingredient>
+		<preparation>Mix the pork cubes with salt &amp; Brandy &amp; leave to marinade for 15 minutes. Blend the beaten egg, cornflour &amp; add the pork cubes and turn until each cube is well coated. Mix the sauce ingredients together in a bowl.</preparation>
+		<cooking> Heat the oil in a wok to 180 degree C or 350 degree F or until a cube of bread browns in 30 seconds. Add the pork cubes and deep fry for 3 minutes, then remove and drain on paper towels. Heat the oil again until smoking, return the pork with the bamboo shoots &amp; fry for 2 minutes or until they are golden brown. Remove and drain on paper towels. Mix the sauce with the meat &amp; vegetable just before serving. </cooking>
+		<cooktime>00:30:00</cooktime>
+	</recipe>
+	<recipe>
+		<name>Egg Pancake</name>
+		<ingredient>
+			<name>Eggs</name>
+			<amount>3</amount>
+			<unit></unit>
+		</ingredient>
+		<ingredient>
+			<name>Salt</name>
+			<amount>1</amount>
+			<unit>tsp</unit>
+		</ingredient>
+		<ingredient>
+			<name>Scallion</name>
+			<amount>1/2</amount>
+			<unit>tsp</unit>
+		</ingredient>
+		<ingredient>
+			<name>Vegetable Oil</name>
+			<amount>5</amount>
+			<unit>tsp</unit>
+		</ingredient>
+		<preparation>Beat the eggs in a bowl and add the scallions and salt, mixing well.</preparation>
+		<cooking>Heat the oil in a wok over high heat until the surface ripples. Add the eggs and swirl the pan so the egg over the surface evenly. Turn the heat to low and low and cook until the bottom of the pancake is set and browned, turn and cook until browned on the other side. Remove and serve.</cooking>
+		<cooktime>00:05:00</cooktime>
+	</recipe>
+</cookbook>

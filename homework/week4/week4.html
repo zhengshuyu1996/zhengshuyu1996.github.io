@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>ZSY's homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="my homepage">
+    <meta name="keywords" content="homepage">
+    <meta name="author" content="ZhengShuYu">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <!-- CSS | STYLE -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+    <style type="text/css">
+    .section {
+        font-size: 18px;
+        /*text-align: left;*/
+        color: darkslategray;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" id="Container">
+        <div class="header">
+            <img src="../../img/header.jpg" alt="header"/>
+        </div>
+        <br/>
+        <div class="week4">
+            <div class="mycard section">
+                <h2>My efforts for week4</h2>
+                <hr/>
+                <strong><a href="#hw1">Homework 1</a></strong><br/>
+                <strong><a href="#hw2">Homework 2</a></strong><br/>
+                <strong><a href="#hw3">Homework 3</a></strong><br/>
+                <strong><a href="questionare.php">Homework 3(DEMO)</a></strong><br/>
+                <strong><a href="#hw4">Homework 4</a></strong><br/>
+                <strong><a href="party.php">Homework 4(DEMO)</a></strong><br/>
+                <strong><a href="#hw5">Homework 5</a></strong><br/>
+                <strong><a href="update.php">Homework 5(DEMO)</a></strong><br/>
+                <hr/>
+                <a href="../../index.html">Back to Index</a><br/><br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw1">
+                <h3>Homework 1: </h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <strong>1. Give the SELECT command to answer the question Who will go to the party held in Peking University?</strong><br/>
+                    <p>A: The command should be <pre><code>SELECT party.Place, guest.Guest_Num, Guest_Name, Age, Gender, E_mail 
+FROM guest, party, guest_party
+WHERE party.Party_Num = guest_party.Party_Num
+AND guest_party.Guest_Num = guest.Guest_Num
+AND party_Name = 'Peking University'</code></pre></p><br/>
+
+                    <strong>2. Figure out a way to obtain the column labels returned by mysql_fetch_array.</strong>
+                    <p>A: The column labels are stored as 'key' value of the mysql table. The follewing codes will print out the column labels. <br/>
+                    <pre><code>$row = mysqli_fetch_array($result);
+while ($next_element = each($row)){
+    $next_element = each($row);
+    $next_key = $next_element['key'];
+    print $next_key;
+}</code></pre></p><br/>
+
+                    <strong>3. Tell the difference between a CGI program and a PHP program executed by a Web Server.</strong>
+                    <p>A: Common Gateway Interface (CGI) offers a standard protocol for web servers to interface with executable programs running on a server that generate web pages dynamically. Though usually written in a scripting language, CGI programs can be written in any programming language.<br/>
+                    &nbsp;&nbsp;PHP is a free server side scripting language. It can be built into web servers like Apache and can be used to generate webpages dynamically. It's designed primarily for web development but is also used as a general-purpose programming language.We can configure Apache to load the PHP interpreter as an Apache module or run the PHP interpreter as a CGI binary.<br/>
+                    &nbsp;&nbsp;By default anything we type in our PHP document is given verbatim to the web browser. Each request will create a new process of the PHP interpreter. A CGI program on the other hand, is more secure because the server manages and controls access to the binaries. PHP now run as our own user rather than the generic Apache user.</pr>
+                </div>
+                <br/>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw2">
+                <h3>Homework 2:</h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <strong>Set up PHP for your Apache and test it.</strong><br/>
+                    <p>A: Done. Here is my <a href="first.php">first php</a>.</p>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw3">
+                <h3>Homework 3:</h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <strong>Transform the guest book that you implemented in week 3 into a Database version.</strong><br/><br/>
+                    <p>A: Click <strong><a href="questionare.php">HERE</a></strong> to view the questionare!<br/>
+                    <strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Error check. A php program named 'check.php' is included in the questionare. On submitting, the program will check if the input data meets the requirements. For example, the 'Age' should be a number, and the 'Email' should be vaild including a '@' and a '.'. Besides, input box with a label '*' should't be empty. Errors will be point out and the form won't be submitted until all requirements are met.</li>
+                        <li>The content of the form is sent to the same page so the information is updated without refreshing the page. I uesd the <code>htmlspecialchars($_SERVER["PHP_SELF"])</code> command to prevent attack.</li>
+                        <li>If you made a mistake, don't worry! The error-free input data will be preserved until a successful submit.</li>
+                    </ul>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw4">
+                <h3>Homework 4(optional):</h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <strong>Create the other two tables, party table and party_guest table( you can choose different table names). Functions realized include: 1)Guest can find out what parties will be given and when and where. 2)In additon to Guest name, Age, Gender, .... User can choose what parties he or she wants to go. 3)Separate PHP programs are provided for the organizer to input information about the parties to be given. </strong><br/><br/>
+                    <p>A: Click <strong><a href="party.php">HERE</a></strong> to view the party list!<br/>
+                    <strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Party details can be viewed, including party name, time, place, a short description and all partipants.</li>
+                        <li>Error check. The same php program named 'check.php' is used as the questionare in homework3. But this time, except guest name, age, gender and email, the program will test if a certain party is selected. Errors will be point out and the form won't be submitted until all requirements are met.</li>
+                        <li>The content of the form is sent to the same page so the information is updated without refreshing the page.</li>
+                        <li>The error-free input data will be preserved until a successful submit.</li>
+                        <li>A PHP program is provided for the organizer to input information about the parties to be given. </li>
+                    </ul>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <div class="mycard section" id="hw5">
+                <h3>Homework 5(optional):</h3>
+                <div style="width:90%; margin-left:auto; margin-right:auto; text-align: left">
+                    <strong>Realize more query functions.</strong><br/><br/>
+                    <p>A: Click <strong><a href="update.php">HERE</a></strong> to update your information!<br/></p>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+        </div>
+        <div class="footer">
+            <p>Pass the W3C Markup Validator<br/>
+            Created by Zheng Shuyu 2016 @ Peking University</p>
+        </div>
+    </div>
+
+    <!-- PLUGIN SCRIPTS -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <!-- END PLUGIN SCRIPTS -->
+
+</body>
+
+</html>
