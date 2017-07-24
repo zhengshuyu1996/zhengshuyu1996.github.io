@@ -1,0 +1,24 @@
+/**
+ * custom
+ * place custom style in this file
+ * add !important to the end if no effect
+ * e.g. color: #fff !important;
+ * --------------------------------------------------
+ *
+ */
+
+.navbar-brand > h1 {
+  font-family: 'Ruda', sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.site-footer-logo {
+  height: 89px;
+}
+
+.btn-primary-success {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #6cd5bc;
+}
