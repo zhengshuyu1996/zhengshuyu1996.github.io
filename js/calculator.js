@@ -71,6 +71,7 @@ function importCard() {
     try {
         cards = JSON.parse(data);
         alert("导入成功!");
+        $('#import-text').val('');
         setCookie('cardData', data, 100);
         showCards();
     }
