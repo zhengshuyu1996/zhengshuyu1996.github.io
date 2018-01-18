@@ -1,4 +1,4 @@
-.container {
+.mycontainer {
 	/*position: relative;*/
 	overflow: hidden;
 	margin-left: auto;
@@ -6,6 +6,7 @@
 	background-color: rgba(242, 246, 255, 0.6);
 	z-index: 10;
 	text-align: center;
+	/*width: 80%;*/
 }
 
 
