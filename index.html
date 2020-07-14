@@ -1,260 +1,400 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8"/>
-    <title>ZSY's homepage</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shuyu's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="my homepage">
-    <meta name="keywords" content="homepage">
-    <meta name="author" content="ZhengShuYu">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="author" content="Shuyu Zheng">
+    
+    <!-- Boostrap Core CSS-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"> 
 
-    <!-- CSS | STYLE -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Fonts -->
+    <link type="text/css" rel="stylesheet" href="css/fonts.css">
 
-</head>
+    <!-- Font awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-<body>
-    <div class="container" id="Container">
+    <!-- Main CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
 
-        <!-- HEADER -->
-        <div class="header">
-            <img src="img/header.jpg" alt="header" />
+  </head>
+
+  <body>
+    <!-- Start wrapper -->
+    <div class="wrapper">
+      <!-- Start a main column with full width -->
+      <div class="main-column col-md-12">
+        <div class="brand"> Shuyu Zheng</div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="" id="nav-home">Home</a></li>
+                <li><a href="" id="nav-about">About</a></li>
+                <li><a href="" id="nav-publication">Publications</a></li>
+                <li><a href="" id="nav-project">Projects</a></li>
+                <li><a href="" id="nav-hobby">Hobbies</a></li>
+                <li><a href="" id="nav-comment">Comments</a></li>
+              </ul>
+          </div>
+          <!-- /navbar-collapse -->
+        </nav>
+        <!-- End Navigation -->
+
+        <!-- Start Session: About -->
+        <div class="margin-about" id="about">
+          <!-- Start left column -->
+          <div class="box col-md-4 col-xs-offset-1">
+            <h4 class="heading-inner">About Me</h4>
+            <div class="hr"></div>
+            
+            <!-- Start intro -->
+            <h4>I'm Shuyu Zheng from Xiamen, Fujian, China.</h4>
+            <h4>I'm now a second-year CS Master student at Peking University, China, advised by Prof. Xuanzhe Liu. Previously, I received my CS bachelor degree in Peking University.</h4>
+            <h4>My research focus on measuring, analysing and modeling "real-world" large scale user behavior/interactions. My current projects also cover the cutting-edge topics such as on-device machine learning and WebAssembly.</h4>
+            <h4>In my spare time, I have a wide interest in literature, music, fashion design, handwork... And I'm always looking for something new!</h4>
+            <h4>Find me on <a href="https://github.com/zhengshuyu1996">Gihub!</a></h4>
+            <!-- End intro -->
+                 
+          </div>
+          <!-- End left column -->
+          <!-- Start right image -->
+          <div class="col-md-5">
+            <img src="image/photo.png" alt="" class="photo-about"/> 
+          </div>
+          <!-- End right image -->
         </div>
-        <!-- END HEADER -->
+        <!-- End Session: About -->
 
-        <br/>
-        <div class="menu_index" id="menu">
-            <div class="picture">
-                <a href="homework/homepage.html"><img src="img/favicon.png" alt="favicon"/></a>
+        <!-- Start Session: Publication -->
+        <div class="margin-publication" id="publication">
+          <div class="box-publication col-md-10 col-xs-offset-1">
+            <h3 class="heading-inner">Publications</h3>
+            <div class="hr"></div>
+            <div class="container desc">
+              <!-- Start Publication Item -->
+              <div class="row">
+                <div class="col-lg-2">
+                  <h4>The Web Conference 2019 (WWW 2019)</h4>
+                </div>
+                <div class="col-lg-5">
+                  <p class="e-heading">Moving Deep Learning into Web Browser: How Far Can We Go?</p>
+                </div>
+                <div class="col-lg-3">
+                  <p class="author">Yun Ma, Dongwei Xiang, <b>Shuyu Zheng</b>, Deyu Tian, Xuanzhe Liu
+                  </p>
+                </div>
+              </div>
+              <!-- End Publication Item -->
+              <!-- Start Publication Item -->
+              <div class="row">
+                <div class="col-lg-2">
+                  <h4>The 12th ACM International Conference on Web Search and Data Mining (WSDM 2019)</h4>
+                </div>
+                <div class="col-lg-5">
+                  <p class="e-heading">FaceOff: Assisting the Manifestation Design of Web Graphical User Interface.</p>
+                </div>
+                <div class="col-lg-3">
+                  <p class="author"><b>Shuyu Zheng</b>, Hu Ziniu, Yun Ma
+                  </p>
+                </div>
+              </div>
+              <!-- End Publication Item -->
             </div>
-            <!-- MENU -->
-            <h3 class="menu-head">MENU</h3>
-            <ol class="nav nav-pills nav-stacked">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">Homework</a></li>
-                <li><a href="#section3">Links</a></li>
-                <li><a href="#section4">Explanations for HW2</a></li>
-                <li><a href="#">Back to Top</a></li>
-            </ol>
-            <!-- END MENU -->
-            <!-- Background music -->
-            <audio autoplay="autoplay" loop="loop" controls="controls">
-                <source src="music.mp3" type="audio/mp3" />
-            </audio>
+          </div>
         </div>
-        <div class="item_body">
+        <!-- End Session: Publication -->
 
-            <!-- SELF INTRODUCE -->
-            <div class="mycard" id="section1">
-                <h3>MY WORK FOR WST COURSE</h3>
-                <p>Welcome to my homepage!<br/>
-                    This is ZhengShuyu, <br/>
-                    a CS student of Peking University.<br/>
-                    Hope you have a pleasant time here(＾－＾)<br/>
-                    Please email me if you have any questions or suggestions.<br/>
-                    Click my favicon for more information.<br/>
-                    <a href="./Combine/index.html">Hahaha</a>
+        <!-- Start Session: Project -->
+        <div class="margin-project" id="project">
+          <!-- Start publication list -->
+          <div class="box col-md-10 col-xs-offset-1">
+            <h3 class="heading-inner">Projects</h3>
+            <div class="hr"></div>
+
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-group fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Service Access Pattern Analysis</h4>
+                <p>
+                  This work is in cooperation with Alibaba Group. We conduct an empirical study on service access patterns via heterogeneous service clients based on two large-scale real-world datasets of launch events. We explore how users consume online services through different service clients, and to what extent their usage behavior patterns vary when consuming the same service. 
                 </p>
+              </div>
             </div>
-            <!-- SELF INTRODUCE -->
-            <br/>
-            <!-- HOMEWORK -->
-            <div class="mycard" id="section2">
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th colspan="3">HOMEWORK</th>
-                        </tr>
-                        <tr>
-                            <th>MONTH</th>
-                            <th>WEEK</th>
-                            <th>COURSE UNITS</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tBody">
-                        <tr>
-                            <td>Sept.</td>
-                            <td><a href="homework/hw.html">Week 1</a></td>
-                            <td>The Overview and fundamentals</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3">Oct.</td>
-                            <td><a href="week2.html">Week 2</a></td>
-                            <td>Basic protocol I</td>
-                        </tr>
-                        <tr>
-                            <td><a href="homework/week3/week3.html">Week 3</a></td>
-                            <td>Basic protocol II</td>
-                        </tr>
-                        <tr>
-                            <td><a href="homework/week4/week4.html">Week 4</a></td>
-                            <td>Access Database through Web</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="4">Nov.</td>
-                            <td><a href="homework/week5/week5.html">Week 5</a></td>
-                            <td>Java-An easy week</td>
-                        </tr>
-                        <tr>
-                            <td><a href="homework/week6/week6.html">Week 6</a></td>
-                            <td>JavaScript-is not Java</td>
-                        </tr>
-                        <tr>
-                            <td><a href="homework/week7/week7.html">Week 7</a></td>
-                            <td>Applets and Servelets</td>
-                        </tr>
-                        <tr>
-                            <td><a href="homework/week8/week8.html">Week 8</a></td>
-                            <td>XML, an overview</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Dec.</td>
-                            <td><a href="homework/week9/week9.html">Week 9</a></td>
-                            <td rowspan="2">Application Server and Programming Frameworks Introduction</td>
-                        </tr>
-                        <tr>
-                            <td><a href="homework/week9/week9.html">Week 10</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Performance Measurement of On-browser Deep Learning Frameworks</h4>
+                <p>
+                  We conduct the first empirical study of deep learning in browsers, surveying 7 most popular JavaScript-based deep learning frameworks and digging out the performance gap between deep learning in browsers and on native platforms. Cooperate in a team of four advised by Professor Xuanzhe Liu, co-director of SaaS Research Group(System Research Lab, Institute of Software).
+                </p>
+              </div>
             </div>
-            <!-- END HOMEWORK -->
-            <br/>
-            <!-- LINK -->
-            <div class="mycard" id="section3">
-                <h4>Useful Websites</h4>
-                <!-- <hr/> -->
-                <ol>
-                    <li><a href="http://www.google.com">Google</a></li>
-                    <li><a href="http://www.baidu.com">Baidu</a></li>
-                    <li><a href="http://pku.edu.cn">Peking University</a></li>
-                    <li><a href="http://net.pku.edu.cn/~zt/wst/m">Web Software Technology</a></li>
-                    <li><a href="http://course.pku.edu.cn">PKU Course</a></li>
-                    <li><a href="homework/homepage.html">My Homepage</a></li>
-                </ol>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <div class="col-md-8" style="padding-left: 0px;">
+                  <h4 class="media-heading">Web GUI Optimization based on Design Mining</h4>
+                  <p>
+                    Inspired by typical design process of human designers, we propose a data-driven automation system named FaceOff that assists the manifestation design of web GUI. We address the task by jointly training structure embedding and style discriminating networks. The first network supports structural retrieval, and the second aims to preserve overall visual harmonization. <a href="https://www.youtube.com/watch?v=yLg_IildunU&t=4s">[Demo]</a>
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img src="image/FaceOff.png" alt="" />
+                </div>
+              </div>
             </div>
-            <!-- END LINK -->
-            <br/>
-            <!-- EXPLAINTIONS -->
-            <div class="mycard" id="section4">
-                <h4>Explanations For Homework2</h4>
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th>MISSION</th>
-                            <th>POSITION</th>
-                            <th>STATE</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tBody">
-                        <tr>
-                            <td>The homepage of your website</td>
-                            <td>This page</td>
-                            <td rowspan="15">Done</td>
-                        </tr>
-                        <tr>
-                            <td>Clearly indicate the location of your homework and place links to all your future homeworks here</td>
-                            <td rowspan="2">Homework section above</td>
-                        </tr>
-                        <tr>
-                            <td>A table with rowspan and colspan attributes specified</td>
-                        </tr>
-                        <tr>
-                            <td>Paragraphs</td>
-                            <td rowspan="3">About-me section above</td>
-                        </tr>
-                        <tr>
-                            <td>Line breaks</td>
-                        </tr>
-                        <tr>
-                            <td>Headings</td>
-                        </tr>
-                        <tr>
-                            <td>Images</td>
-                            <td rowspan="2">Image on the left</td>
-                        </tr>
-                        <tr>
-                            <td>One photo, which is linked to your personal website</td>
-                        </tr>
-                        <tr>
-                            <td>Hypertext links that target within the same page</td>
-                            <td>Menu section on the left</td>
-                        </tr>
-                        <tr>
-                            <td>Hypertext links</td>
-                            <td rowspan="2">Link section above</td>
-                        </tr>
-                        <tr>
-                            <td>An ordered list</td>
-                        </tr>
-                        <tr>
-                            <td>A frameset or a kind of layout which divides the screen into two parts</td>
-                            <td>In the webpage of HW1</td>
-                        </tr>
-                        <tr>
-                            <td>an HTML comment</td>
-                            <td>In the source code</td>
-                        </tr>
-                        <tr>
-                            <td>One photo, which is linked to your personal website</td>
-                            <td>Image on the left</td>
-                        </tr>
-                        <tr>
-                            <td>Pass HTML5 validation</td>
-                            <td>All pages have passed the validation</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <div class="col-md-8" style="padding-left: 0px;">
+                  <h4 class="media-heading">Game: Splender</h4>
+                  <p>
+                    An online version of Splender, a tabletop game of three. I redesigned the user interface of the game, providing a simplified, interative and hearting-warming user interface. Players can battle with AIs or play online with friends.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img src="image/splender.png" alt="" />
+                </div>
+              </div>
             </div>
-            <!-- END EXPLAINTIONS -->
-            <br/>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <div class="col-md-8" style="padding-left: 0px;">
+                  <h4 class="media-heading">Portrait MaSter</h4>
+                  <p>
+                    We build Portrait MaSter, a tool that extracts portrait from an image and apply a style transfer according to user preferences. The system contains a demo frontend, a backend server and the inference pipeline. The overall inference process includes the human portrait matting stage and the style transfer stage.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img src="image/locket.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <div class="col-md-8" style="padding-left: 0px;">
+                  <h4 class="media-heading">Evol Calculator</h4>
+                  <p>
+                    A Web App that solves puzzles in the mobile game Evol which calculates the best card strategy. The calculator contains a responsive front end, a server and a database. <a href="https://github.com/evolcalculator/evolcalculator.github.io">[Open Source Code]</a>
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img src="image/evol.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">JG Helper (Wechat Mini Program)</h4>
+                <p>
+                  A Wechat mini program for students to do quizzes and a webpage for teachers to edit tests, view results and details for the course Introduction to Computation. The project can be found on the Wechat mini program platform.
+                </p>
+              </div>
+            </div>
+            <!-- End Project Item -->
+            <!-- Start Project Item -->
+            <div class="media">
+              <div class="pull-left">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                </span> 
+              </div>
+              <div class="media-body">
+                <div class="col-md-8" style="padding-left: 0px;">
+                  <h4 class="media-heading">Takeaway Helper (Android App)</h4>
+                  <p>
+                    We Designed and developed an Android App that rearranges restaurant information from three major takeaway platforms. This App provides recommendation based on user behavior and real time discount information.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img src="image/takeaway.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- End Project Item -->
+          </div>
+          <!-- End publication list -->
         </div>
-        <!-- FOOTER & COPYRIGHT -->
-        <div class="footer">
-            <p>Pass the W3C Markup Validator<br/>
-            Created by Zheng Shuyu 2016 @ Peking University</p>
+        <!-- End Session: Project -->
+
+        <!-- Start Session: Hobby -->
+        <div class="margin-hobby" id="hobby">
+          <div class="box col-md-10 col-xs-offset-1">
+            <h3 class="heading-inner">Hobbies</h3>
+            <div class="hr"></div>
+          </div>
+
+          <!-- Start Container -->
+          <div class="container">
+            <div class="row">
+              <!-- Start Hobby List -->
+              <div class="portfolio-items grid">
+                <!-- Start Hobby Item -->
+                <div class="portfolio-item summer col-xs-12 col-sm-12 col-md-5 thumbs">
+                  <figure class="effect-moses">
+                    <a href="image/WechatIMG95.jpeg">
+                      <img src="image/WechatIMG95.jpeg" alt=""/>
+                      <figcaption>
+                        <h2>Miniature Models</h2>
+                        <p>Here is a piece of my work: <br/> a mini cafe</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+                </div>
+                <!-- End Hobby Item -->
+                <!-- Start Hobby Item -->
+                <div class="portfolio-item summer col-xs-12 col-sm-12 col-md-5 thumbs">
+                  <figure class="effect-moses">
+                    <a href="image/WechatIMG97.jpeg">
+                      <img src="image/WechatIMG97.jpeg" alt=""/>
+                      <figcaption>
+                        <h2>Clothing Design</h2>
+                        <p>I’m interested in sewing and clothing design, especially for my lovely dolls</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+                </div>
+                <!-- End Hobby Item -->
+                <!-- Start Hobby Item -->
+                <div class="portfolio-item summer col-xs-12 col-sm-12 col-md-5 thumbs">
+                  <figure class="effect-moses">
+                    <a href="image/DSC04283.png">
+                      <img src="image/DSC04283.png" alt=""/>
+                      <figcaption>
+                        <h2>Hanfu</h2>
+                        <p>Traditional Chinese Clothing</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+                </div>
+                <!-- End Hobby Item -->
+                <!-- Start Hobby Item -->
+                <div class="portfolio-item summer col-xs-12 col-sm-12 col-md-5 thumbs">
+                  <figure class="effect-moses">
+                    <a href="image/guzheng.jpg">
+                      <img src="image/guzheng.jpg" alt=""/>
+                      <figcaption>
+                        <h2>Guzheng</h2>
+                        <p>I've been learning Guzheng for 16 years</p>
+                      </figcaption>
+                    </a>
+                  </figure>
+                </div>
+                <!-- End Hobby Item -->
+              </div>
+              <!-- End Hobby List -->
+            </div>
+          </div>
+          <!-- End Container -->
         </div>
-        <!-- END FOOTER & COPYRIGHT -->
+        <!-- End Session: Hobby -->
+
+        <!-- Start Session: Comment -->
+        <!-- <div class="margin-comment" id="comment">
+          <div class="box col-md-10 col-xs-offset-1">
+            <h3 class="heading-inner">Comments</h3>
+              <div class="hr"></div>
+          </div>
+          <div class="comment-container col-xs-10 col-sm-10 col-md-10 col-xs-offset-1">
+            <div id="comment-list" class="comment-list">
+            </div>
+          </div>
+          <form action="/data" method="POST" class="col-xs-8 col-xs-offset-2">
+            <div class="form-group">
+              <label class="form-label col-sm-2" for="form-name">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="form-name" id="form-name" placeholder="Name">
+              </div>
+            </div>
+            <br/><br/>
+            <div class="form-group">
+              <label class="form-label col-sm-2" for="form-comment">Comment</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" name="form-comment" id="form-comment" rows="3" placeholder="Write some comments"></textarea>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+          </form>
+        </div> -->
+        <!-- End Session: Comment -->
+
+        <!-- Start footer -->
+        <div class="footer col-xs-6 col-sm-6 col-md-6 col-xs-offset-3">
+          <h5><a href="" id="nav-back">Back to Top</a></h5>
+        </div>
+        <!-- End footer -->
+
+      </div>
+      <!-- End main column -->
     </div>
+    <!-- End wrapper -->
 
-    <!-- PLUGIN SCRIPTS -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <!-- <script src="js/index.js"></script> -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Boostrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Smooth scroll JS -->
+    <script src="js/smoothscroll.js"></script>
 
-    <script type="text/javascript">
-        function menuFixed(id) {
-            var obj = document.getElementById(id);
-            var _getTop = obj.offsetTop;
-            window.onscroll = function(){
-                changePos(id, _getTop);
-            }
-        }
-        function changePos(id, top){
-            var obj = document.getElementById(id);
-            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            if(scrollTop + 20 < top){
-                obj.style.position = 'relative';
-                obj.style.top = '0';
-            }else{
-                // alert(id+","+top+","+left+","+Height+","+Width);
-                obj.style.position = 'fixed';
-                obj.style.top = '20px';
-            }
-        }
-        window.onload = function(){
-            var box = document.getElementById('Container');
-            var boxWidth = box.offsetWidth;
-            var obj = document.getElementById('menu');
-            obj.style.width = boxWidth * 0.3 + 'px';
-            // alert(boxWidth+","+obj.style.width);
-            menuFixed('menu');
-        }
-    </script>
-    <!-- END PLUGIN SCRIPTS -->
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
 
-</body>
+  </body>
 </html>
